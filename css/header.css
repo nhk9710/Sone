@@ -1,0 +1,17 @@
+.header-container{ width: 100%; }
+
+hr{ color: #dbdbdb }
+
+.material-icons{ font-size: 1.5em; }
+
+.first-head{ width: 100%;max-width: 1700px; display: flex; justify-content: flex-end; margin: 15px auto 0; }
+.fh-content{ display: flex; justify-content: space-between; }
+.fh-content p{ margin-left: 26px; font-size: .9em; color: dimgrey; font-weight: bold; }
+.fh-content p:last-child:after{ content: '∨'; margin-left: 5px }
+
+.second-head{ width: 100%; align-items: center; display: flex; justify-content: flex-end; margin: 0 auto; }
+.sh-content{ max-width: 1700px; margin: 0 auto; display: flex; justify-content: space-between; width: 100%; align-items: center; }
+.sh-content img{ width: 54%; }
+.sh-center{ width: 63% }
+.sh-center p{ font-weight: bolder; font-size: 1.2em; }
+.note-icon{ font-size: 2em; color: black; font-weight: lighter }
