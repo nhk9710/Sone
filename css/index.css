@@ -2,4 +2,15 @@
 
 .header-container{ width: 100%; }
 
-.first-header{ display: flex; justify-content: flex-end; border: 1px solid black }
+.first-container{ max-width: 80%; display: flex; justify-content: space-between; margin: 0 auto; align-items: center; padding-top: 2%; padding-bottom: 2% }
+.single-item{ width: 50%;}
+
+.slick-content{ display: flex; flex-direction: column; justify-content: space-between; width: 20%; }
+.first-slick{ display: flex; margin-bottom: 10%; text-align: center }
+.mini-slick{ display: flex; justify-content: space-between; }
+
+
+
+
+
+

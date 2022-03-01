@@ -3,8 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <title>footer</title>
+  <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
-this is footer
+<div class="footer-container">
+<div class="first-foot f-sb-m" style="padding-top: 5%">
+  <div>
+    <p class="vb-font1 white mb20">에스원에 <br/> 문의하세요.</p>
+    <p class="white" style="line-height: 25px;">원하는 상담내용과 간단한 정보를 남겨주시면 <br/>에스원의 전문상담사가 도와드리겠습니다.</p>
+  </div>
+  <div>
+    <div>
+      <p style="color: rgba(255 , 255 , 255 , .6); font-weight: bolder">대표전화</p>
+      <p class="white" style="line-height: 45px"><span class="vb-font1 white mr20">1588-3122</span>24시간 운영,연중 무휴</p>
+    </div>
+    <div>
+      
+    </div>
+  </div>
+</div>
+  <div class="second-foot ">
+    <div class="footer-info">
+      <div class="info-first">
+        <p class="bold-font1 mb30">(주)에스원</p>
+        <p class="mb10">04511 서울특별시 중구 세종대로 7길 25</p>
+        <p class="mb10">사업자등록번호 : 208-81-13302</p>
+        <p class="mb10">대표이사 : 노희찬</p>
+      </div>
+      <p style="color: rgba(255 , 255 , 255 , .6);" class="s-font2">COPYRIGHT 2021 S-1 CORPORATION.</p>
+      <div class="info-second">
+        <img src="../img/isms-p.png" alt="Ismsp이미지">
+        <div class="medium-grey2 s-font2 ml30">
+          <p>인증번호 : ISMS-P-KISA-2019-034</p>
+          <p>인증범위 : 에스원 온라인 서비스(대표홈페이지, 영상보안, 세콤, 정보보안PS/ESP), 인재개발원 운영</p>
+          <p>유효기간 : 2019-12-11~2022-12-10</p>
+        </div>
+      </div>
+      <div class="info-second mt30">
+        <img src="../img/isms-p.png" alt="Ismsp이미지">
+        <div class="medium-grey2 s-font2 ml30">
+          <p>인증번호 : ISMS-KISA-2019-050</p>
+          <p>인증범위 : 에스원 온라인 서비스(UVIS, 안심모바일, 대외 웹사이트) 운영</p>
+          <p>유효기간 : 2019-12-11~2022-12-10</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-link medium-grey2">
+      <div class="link-first bold-font4">
+        <p>회사소개</p>
+        <p>IR</p>
+        <p>윤리경영</p>
+        <p>자료실</p>
+        <p>인재채용</p>
+        <p>원격지원서비스</p>
+      </div>
+      <div class="link-second medium-grey1">
+        <p>이용안내</p>
+        <p>보안신고</p>
+        <p>회원약관</p>
+        <p>개인정보처리방침</p>
+        <p>영상정보처리방침</p>
+        <p>협력사정보</p>
+      </div>
+      <div class="link-third">
+        <div class="f-s-m">
+          <img src="../img/ico_footer_youtube.png" alt="youtube">
+          <p class="ml20">YouTube</p>
+        </div>
+        <div class="f-s-m">
+          <img src="../img/ico_footer_facebook.png" alt="FaceBook">
+          <p class="ml20">FaceBook</p>
+        </div>
+        <div class="f-s-m">
+          <img src="../img/ico_footer_blog.png" alt="BLOG">
+          <p class="ml20">BLOG</p>
+        </div>
+        <div class="f-s-m">
+          <img src="../img/ico_footer_instagram.png" alt="Instagram">
+          <p class="ml20">Instagram</p>
+        </div>
+      </div>
+      <div class="link-fourth">
+        <button type="button" class="medium-grey2 bold-font4 family-button">FAMILY SITE<span class="ml30 big-font4">V</span></button>
+        <div class="family-link">
+          <p>윤리경영사이트</p>
+          <p>인재개발원</p>
+          <p>마음 나눔터</p>
+          <p>협력포탈</p>
+          <p>TSC 포털</p>
+          <p>TSC 기술지원</p>
+          <p>원격지원서비스</p>
+          <p>에스원 웹뷰어</p>
+          <p>클라우드 매니저</p>
+          <p>모바일 카드</p>
+          <p>에스원 ESP</p>
+          <p>에스원 ESP 관리</p>
+          <p>안심모바일</p>
+          <p>통합UVIS</p>
+        </div>
+        <div class="language">
+          <p class="bold-font1">KOR</p>
+          <p class="bold-font1">ENG</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script>
+  $('.family-button').click(function(){
+    if ($('.family-link').hasClass('link-click')) {
+      $('.family-link').removeClass('link-click');
+    }else{
+      $('.family-link').addClass('link-click');
+    }
+  });
+</script>
 </body>
 </html>

@@ -34,6 +34,8 @@
 .orange{ color: orangered; }
 .skyblue{ color: skyblue }
 .white{ color: white }
+.medium-grey1{ color: rgba(255 , 255 , 255 , .6); }
+.medium-grey2{ color: rgba(255 , 255 , 255 , .7); }
 
 /* very big font */
 .vb-font1{ font-size: 2.5em; font-weight: bolder }

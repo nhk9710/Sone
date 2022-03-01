@@ -1,17 +1,24 @@
-.header-container{ width: 100%; }
+.header-container{ width: 100%; height: auto }
 
-hr{ color: #dbdbdb }
+hr{  background: floralwhite; }
 
 .material-icons{ font-size: 1.5em; }
 
-.first-head{ width: 100%;max-width: 1700px; display: flex; justify-content: flex-end; margin: 15px auto 0; }
-.fh-content{ display: flex; justify-content: space-between; }
+.first-head{ width: 100%; display: flex; justify-content: flex-end; margin: 15px auto 0; border-bottom: 1px solid #dbdbdb; padding-bottom: 10px; }
+.fh-content{ display: flex; justify-content: space-between; margin-right: 5%; }
 .fh-content p{ margin-left: 26px; font-size: .9em; color: dimgrey; font-weight: bold; }
 .fh-content p:last-child:after{ content: '∨'; margin-left: 5px }
 
-.second-head{ width: 100%; align-items: center; display: flex; justify-content: flex-end; margin: 0 auto; }
-.sh-content{ max-width: 1700px; margin: 0 auto; display: flex; justify-content: space-between; width: 100%; align-items: center; }
+.second-head{ width: 100%; position: sticky; top:0; position: -webkit-sticky; align-items: center; display: flex; justify-content: flex-end; margin: 0 auto; padding-top: 1%; padding-bottom: 1%; border-bottom: 1px solid #dbdbdb }
+.sh-content{ max-width: 90%; margin: 0 auto; display: flex; justify-content: space-between; width: 100%; align-items: center; }
 .sh-content img{ width: 54%; }
 .sh-center{ width: 63% }
-.sh-center p{ font-weight: bolder; font-size: 1.2em; }
-.note-icon{ font-size: 2em; color: black; font-weight: lighter }
+.sh-center p{ font-weight: bolder; font-size: 1.2em; position: relative }
+.sh-center p:hover{ color: #0072ce; cursor: pointer }
+.sh-center p:before{ position: absolute; content: ''; background-color: #0072ce; width: 0; height: 2px; left: 50%; top: 172%; opacity: 0; transition: all .1s linear }
+.sh-center p:after{ position: absolute;  content: ''; background-color: #0072ce; width: 0; height: 2px; right: 50%; top: 172%; opacity: 0; transition: all .1s linear}
+.sh-center p:hover:before{ opacity: 1; width: 50%;}
+.sh-center p:hover:after{  opacity: 1; width: 50%;}
+
+
+.note-icon{ font-size: 2em; color: black; font-weight: lighter; cursor:pointer; }
