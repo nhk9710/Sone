@@ -21,6 +21,10 @@
 .s-font4{ font-size: 0.6em; }
 .s-font5{ font-size: 0.5em; }
 
+/* just bold */
+.bold{ font-weight: bold }
+.bolder{ font-weight: bolder }
+
 /* title-font */
 .title-font{ font-size: 1.2em; font-weight: bolder; position: relative; margin-left: 10px; }
 .title-font:before{ position: absolute; content: ''; width: 5px; height: 19px; background-color: deepskyblue; left: -10px; }
@@ -108,4 +112,14 @@
 .top7{ top:70% }
 .top8{ top:80% }
 .top9{ top:90% }
+
+/* line-height */
+.lh{ line-height: 20px; }
+.lh1{ line-height: 30px }
+.lh2{ line-height: 40px }
+.lh3{ line-height: 50px }
+.lh4{ line-height: 60px }
+.lh5{ line-height: 70px }
+.lh6{ line-height: 80px }
+
 
