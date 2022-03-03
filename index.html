@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Noto+Sans:wght@700&family=Noto+Serif+Display:ital,wght@0,200;0,400;0,600;0,800;1,300;1,400;1,500&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/jquery.lineProgressbar.css">
   <link rel="stylesheet" href="./slick/slick.css">
   <link rel="stylesheet" href="./slick/slick-theme.css">
   <link rel="stylesheet" href="./css/common.css">
@@ -21,35 +22,35 @@
 
   <div class="body-container">
     <div class="first-container">
-      <div class="single-item">
+      <!--<div class="single-item">
         <div><p class="vb-font1">에스원<br/>모바일카드 발급 이벤트</p></div>
         <div><p class="vb-font1">에스원이 ESG경영실천에<br/>앞장 서겠습니다!!</p></div>
         <div><p class="vb-font1">다양한 경험과 전문지식으로<br/>차별화된 고객 맞춤<br/>서비스를 제공하겠습니다.</p></div>
         <div><p class="vb-font1">믿음이 가는 1등기업, <br/>고객 여러분의 모든 안심을<br/>함께 하겠습니다.</p></div>
-      </div>
+      </div>-->
 
       <div class="slick-content">
         <div class="first-slick f-sb-m">
-          <b class="banner_play"><i class="material-icons">play_arrow</i></b>
-          <span class="banner-prev" style="cursor: pointer"><i class="material-icons">arrow_back_ios</i></span>
-          <p>01/04</p>
-          <span class="banner-next" style="cursor: pointer"><i class="material-icons">arrow_forward_ios</i></span>
+          <b class="banner_play bold-font1 mr20"><i class="material-icons">play_arrow</i></b>
+          <span class="banner-prev bold-font1 mr20" style="cursor: pointer"><i class="material-icons">arrow_back_ios</i></span>
+          <p class="bold-font1"><span class="first_current bold-font1">01</span>/04</p>
+          <span class="banner-next bold-font1 ml20" style="cursor: pointer"><i class="material-icons">arrow_forward_ios</i></span>
         </div>
 
-        <div class="mini-slick">
-          <div><img src="./img/image1.jfif" alt="A사진"></div>
-          <div><img src="./img/image2.png" alt="태블릿"></div>
-          <div><img src="./img/image3.png" alt="사람"></div>
+        <div class="mini-slick mt30 mr30">
+          <div><img class="mr20" src="./img/image1.jfif" alt="A사진"></div>
+          <div><img class="mr20" src="./img/image2.png" alt="태블릿"></div>
+          <div><img class="mr20" src="./img/image3.png" alt="사람"></div>
         </div>
       </div>
     </div>
 
     <div class="main-banner">
       <div class="main-slick">
-        <div><img src="./img/banner1.jpg" alt="에스원 모바일카드 발급 이벤트 배너"></div>
-        <div><img src="./img/banner4.jpg" alt="에스원 esg a등급 획득 배너"></div>
-        <div><video src="./img/banner2.mp4" onplaying="setTimeout(function(){$('#videoThumbnail').remove();}, 1000)" loop muted></video></div>
-        <div><video src="./img/banner3.mp4" onplaying="setTimeout(function(){$('#videoThumbnail').remove();}, 1000)" loop muted></video> </div>
+        <div><p class="vb-font1">에스원<br/>모바일카드 발급 이벤트</p><img src="./img/banner1.jpg" alt="에스원 모바일카드 발급 이벤트 배너"></div>
+        <div><p class="vb-font1">에스원이 ESG경영실천에<br/>앞장 서겠습니다!!</p><img src="./img/banner4.jpg" alt="에스원 esg a등급 획득 배너"></div>
+        <div><p class="vb-font1">다양한 경험과 전문지식으로<br/>차별화된 고객 맞춤<br/>서비스를 제공하겠습니다.</p><video src="./img/banner2.mp4" onplaying="setTimeout(function(){$('#videoThumbnail').remove();}, 1000)" loop="loop" autoplay="autoplay" muted></video></div>
+        <div><p class="vb-font1">믿음이 가는 1등기업, <br/>고객 여러분의 모든 안심을<br/>함께 하겠습니다.</p><video src="./img/banner3.mp4" onplaying="setTimeout(function(){$('#videoThumbnail').remove();}, 1000)" loop="loop" autoplay="autoplay" muted></video> </div>
       </div>
       <div class="under-banner">
         <div class="under-left">
@@ -64,23 +65,23 @@
         </div>
 
         <div class="under-right">
-          <div>
+          <div class="pointer">
             <img src="./img/ico_file01.png" alt="에스원웹뷰어">
             <p class="bolder">에스원웹뷰어</p>
           </div>
-          <div>
+          <div class="pointer">
             <img src="./img/ico_file02.png" alt="모바일카드">
             <p class="bolder">모바일카드</p>
           </div>
-          <div>
+          <div class="pointer">
             <img src="./img/ico_file03.png" alt="에스원자료실">
             <p class="bolder">에스원자료실</p>
           </div>
-          <div>
+          <div class="pointer">
             <img src="./img/ico_file04.png" alt="B2B문의">
             <p class="bolder">B2B문의</p>
           </div>
-          <div>
+          <div class="pointer">
             <img src="./img/ico_file05.png" alt="원격지원">
             <p class="bolder">원격지원</p>
           </div>
@@ -106,10 +107,10 @@
             <p class="grey lh s-font1">※고객수(2022년 1월, 세콤, 차량운행관리,<br/>&nbsp;부동산종합서비스, 안심모바일 고객 합산)</p>
           </div>
           <div class="second-right">
-            <p class="bolder">전국 보안서비스 가입고객 중</p>
-            <p>에스원 <span>52.9%</span></p>
-            <p>A사 <span>35.1%</span></p>
-            <p>B사 <span>9.2%</span></p>
+            <p class="bolder mb20">전국 보안서비스 가입고객 중</p>
+              <div id="progressbar1"></div><p class="bold-font1 mb30">에스원 <span>53%</span></p>
+            <div id="progressbar2"></div><p class="bold-font3 mb30 grey">A사 <span>35%</span></p>
+            <div id="progressbar3"></div><p class="bold-font5 mb30 grey">B사 <span>9%</span></p>
             <p class="mt30 lh grey">※점유율(한국갤럽 2020년 11월, 월서비스료 기준, 시스템경비 가입고객 총 13,800개 샘플조사,<br/>신뢰수준 95% 표본오차±0.83%p)</p>
           </div>
         </div>
@@ -184,62 +185,172 @@
     </div>
 
 
-    <div>      <div
+    <div class="fourth-container"
+         data-aos="fade-up"
+         data-aos-offset="200"
+         data-aos-delay="50"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out">
+      <div class="fourth-text">
+        <p class="vb-font1 mb30">대한민국<br/>
+          어디든 모두가<br/>
+          안심할 수 있게</p>
+        <p class="lh bolder dgrey mb30">우리나라 섬마을부터 최전방까지<br/>
+          에스원은 안전이라는 단 하나의 사명으로<br/>
+          고객 여러분과 함께 하겠습니다.</p>
+        <p>전체보기</p>
+      </div>
+      <div class="fourth-list">
+        <div class="dgrey mb30 active">
+          <p class="mb10 bolder s-font1">통합보안솔루션</p>
+          <p class="bold-font1 mb20">인제 양양 터널</p>
+          <p>국가시설</p>
+        </div>
+        <div class="dgrey mb30">
+          <p class="mb10 bolder s-font1">부동산종합서비스</p>
+          <p class="bold-font1 mb20">창원 NC 파크</p>
+          <p>시설관리(FM)</p>
+        </div>
+        <div class="dgrey mb30">
+          <p class="mb10 bolder s-font1">부동산종합서비스</p>
+          <p class="bold-font1 mb20">인천 파라다이스 시티</p>
+          <p>시설관리(FM)</p>
+        </div>
+        <div class="dgrey mb30">
+          <p class="mb10 bolder s-font1">세콤·보안</p>
+          <p class="bold-font1 mb20">삼성 라이온즈 파크</p>
+          <p>상업용세콤</p>
+        </div>
+        <div class="fourth-btn">
+          <span class="fourth-prev" style="cursor: pointer"><i class="material-icons">expand_less</i></span>
+          <p><span class="fourth_current">01</span>/04</p>
+          <span class="fourth-next" style="cursor: pointer"><i class="material-icons">expand_more</i></span>
+        </div>
+      </div>
+      <div class="fourth-slick">
+        <div><img src="./img/fourth1.jpg" alt="터널"></div>
+        <div><img src="./img/fourth2.jpg" alt="야구공"></div>
+        <div><img src="./img/fourth3.jpg" alt="인천 파라다이스 시티"></div>
+        <div><img src="./img/fourth4.jpg" alt="삼성 라이온즈 파크"></div>
+      </div>
+    </div>
+
+      <div
+              class="fourth-banner"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out">
+        <div class="banner-text">
+          <p class="vb-font1 mb10">세콤 소개하고 상품권 받고</p>
+          <p style="font-size: 2.5em; margin-bottom: 15%">안심나눔 고객소개 제도</p>
+          <p>새로운 고객님을 소개해주시면 감사의 보답으로 상품권을 드립니다.</p>
+        </div>
+        <img src="./img/fourth_banner.jpg" alt="안심나눔 고객소개 제도">
+      </div>
+
+    <div
+            class="fifth-container"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out">
+      <div style="display: flex; align-items: center; margin-left: 40%; margin-bottom: 4%">
+        <p style="font-size: 3em; font-weight: bolder">에스원 NOW</p>
+        <p class="dgrey pointer" style="margin-left: 40%">전체보기</p>
+      </div>
+      <div class="fifth-contents">
+        <div class="fifth-content">
+          <p class="lh1 bold-font1 mb30">중대재해처벌법 고민 해결 나선<br/>
+            '에스원 AI CCTV'</p>
+          <p style="margin-top: 25%; font-weight: bolder">2022.02.14</p>
+        </div>
+        <div class="fifth-content">
+          <p class="lh1 bold-font1 mb30">에스원'21년 침입범죄 동향 분석</p>
+          <p style="margin-top: 25%; font-weight: bolder">2022.02.07</p>
+        </div>
+        <div class="fifth-content">
+          <p class="lh1 bold-font1 mb30">글로벌MZ세대 사로잡은 '에스원<br/>
+          콘텐츠'</p>
+          <p style="margin-top: 25%; font-weight: bolder">2022.01.07</p>
+        </div>
+      </div>
+      <div class="fifth-youtube">
+        <iframe width="70%" height="600px" src="https://www.youtube.com/embed/OouL91N1vH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="fifth-links">
+        <div class="fifth-link">
+          <img src="./img/fifth-link1.jpg" alt="유튜브 썸네일">
+          <div class="mt20">
+            <p class="fifth-link-text bolder s-font1 mb10 lh">
+              꽉 막힌 그 사람, 좋아할 수 있을까?<br/> _ 에스맨숀 시..</p>
+            <p>2022.02.14</p>
+          </div>
+        </div>
+        <div class="fifth-link">
+          <img src="./img/fifth-link2.jpg" alt="유튜브 썸네일">
+          <div class="mt20">
+            <p class="fifth-link-text bolder s-font1 mb10 lh">카페에 출몰한 있지 빌런(feat.<br/>효크포크)</p>
+            <p>2022.01.06</p>
+          </div>
+
+        </div>
+        <div class="fifth-link">
+          <img src="./img/fifth-link3.jpg" alt="유튜브 썸네일">
+          <div class="mt20">
+            <p class="fifth-link-text bolder s-font1 mb10 lh">[웹드라마 teaser] 세상에서 가장<br/>안전한 에스맨숀..</p>
+            <p>2022.01.06</p>
+          </div>
+
+        </div>
+        <div class="fifth-link">
+          <img src="./img/fifth-link4.jpg" alt="유튜브 썸네일">
+          <div class="mt20">
+            <p class="fifth-link-text bolder s-font1 mb10 lh">에스원 붙어 있는 집은 다<br/>맛집이라고!?</p>
+            <p>2022.01.06</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <div
+             class="last-container"
               data-aos="fade-up"
               data-aos-offset="200"
               data-aos-delay="50"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              data-aos-mirror="true"
-              data-aos-once="false"
-              data-aos-anchor-placement="top-center"
       >
-        안녕하세요
-      </div></div>
-    <div>      <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-mirror="true"
-              data-aos-once="false"
-              data-aos-anchor-placement="top-center"
-      >
-        안녕하세요
-      </div></div>
-    <div>      <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-mirror="true"
-              data-aos-once="false"
-              data-aos-anchor-placement="top-center"
-      >
-        안녕하세요
-      </div></div>
-    <div>      <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-mirror="true"
-              data-aos-once="false"
-              data-aos-anchor-placement="top-center"
-      >
-        안녕하세요
-      </div></div>
+        <div>
+          <p class="big-font1 mb20" style="letter-spacing: inherit">에스원 고객센터 모바일앱과 함께</p>
+          <p class="vb-font1">언제 어디서나<br/>에스원과 함께하세요</p>
+          <div class="f-sb-m" style="margin-top: 15%">
+            <div class="f-sb-m border-db" style="margin-right: 5%; border-radius: 5px">
+              <img src="./img/ico_google.png" alt="구글 플레이">
+              <img src="./img/qr_android.png" class="ml30" alt="구글 QR">
+            </div>
+            <div class="f-sb-m border-db" style="border-radius: 5px">
+              <img src="./img/ico_appstore.png" alt="앱 스토어">
+              <img src="./img/qr_apple.png" class="ml30" alt="애플 QR">
+            </div>
+          </div>
+        </div>
+       <img src="./img/img_bg_app.png" alt="휴대폰든 손">
+       <div class="last-arrow pointer"><span>↑</span>
+         </div>
+      </div>
   </div>
 
   <footer></footer>
-  <input class="goup-btn" type="button" onclick="clickme()">
+  <input class="goup-btn" type="button">
 </div>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="./js/jquery.lineProgressbar.js"></script>
 <script src="./slick/slick.min.js"></script>
 <script src="./js/index.js"></script>
 <script>
@@ -247,9 +358,40 @@
         $('header').load("./html/header.html");
         $('footer').load("./html/footer.html");
 
-        function clickme() {
-            window.scrollTo(0,0);
-        }
+
+        $('#progressbar1').LineProgressbar({
+            percentage: 52.9,
+            duration: 2000,
+            backgroundColor: 'white',
+            width: '50%',
+            height: '20px',
+            ShowProgressCount: 'false',
+            fillBackgroundColor: '#0072ce'
+        });
+
+        $('#progressbar2').LineProgressbar({
+            percentage: 35,
+            duration: 2000,
+            backgroundColor: 'white',
+            width: '50%',
+            height: '20px',
+            ShowProgressCount: 'false',
+            fillBackgroundColor: 'grey'
+        });
+
+        $('#progressbar3').LineProgressbar({
+            percentage: 9,
+            duration: 2000,
+            backgroundColor: 'white',
+            width: '50%',
+            height: '20px',
+            ShowProgressCount: 'false',
+            fillBackgroundColor: 'grey'
+        });
+
+        $('.last-arrow').click(function () {
+           window.scrollTo(0,0);
+        })
     })
 </script>
 </body>

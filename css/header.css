@@ -15,10 +15,17 @@ hr{  background: floralwhite; }
 .sh-center{ width: 63% }
 .sh-center p{ font-weight: bolder; font-size: 1.2em; position: relative }
 .sh-center p:hover{ color: #0072ce; cursor: pointer }
-.sh-center p:before{ position: absolute; content: ''; background-color: #0072ce; width: 0; height: 2px; left: 50%; top: 172%; opacity: 0; transition: all .1s linear }
-.sh-center p:after{ position: absolute;  content: ''; background-color: #0072ce; width: 0; height: 2px; right: 50%; top: 172%; opacity: 0; transition: all .1s linear}
+.sh-center p:hover~.header-sub{ opacity: 1 }
+.sh-center p:before{ position: absolute; content: ''; background-color: #0072ce; width: 0; height: 2px; left: 50%; top: 278%; opacity: 0; transition: all .1s linear }
+.sh-center p:after{ position: absolute;  content: ''; background-color: #0072ce; width: 0; height: 2px; right: 50%; top: 278%; opacity: 0; transition: all .1s linear}
 .sh-center p:hover:before{ opacity: 1; width: 50%;}
 .sh-center p:hover:after{  opacity: 1; width: 50%;}
 
+
+
+/*
+!* sub-menu *!
+.header-sub{ opacity: 0; position: absolute; background-color: white; width: 100%; display: flex; justify-content: space-between; left: 0; box-shadow: 5px 5px 20px grey;}
+*/
 
 .note-icon{ font-size: 2em; color: black; font-weight: lighter; cursor:pointer; }
